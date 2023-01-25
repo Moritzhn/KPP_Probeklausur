@@ -11,7 +11,7 @@ int main(){
   
   //abfragen des offenen Betrags
   printf("Geben sie den offenen Betrag in Cent ein:");
-  scanf("%i", &oB);
+  scanf("%d", &oB);
   
   //ausrechnen wieviele Münzen gebraucht werden
   while (oB >= 200){
@@ -29,7 +29,7 @@ int main(){
   }
   
   //ausgabe wieviele Münzen gebraucht werden
-  printf("Man braucht %i 2 Euro Stücke, %i 50 Cent Stücke, %i 10 Cent Stücke, %i 5 Cent Stücke /n" a,b,c,d);
+  printf("Man braucht %d 2 Euro Stücke, %d 50 Cent Stücke, %d 10 Cent Stücke, %d 5 Cent Stücke. /n" a,b,c,d);
   
   return 0;
 }
