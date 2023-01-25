@@ -25,8 +25,8 @@ int main(){
   } while (oB >= 0.1){
     oB = oB - 0.1;
     c++;
-  } while (oB >= 0.05){
-    oB = oB - 0.05;
+  } if (oB >= 0.050){
+    oB = oB - 0.050;
     d++;
   }
   
