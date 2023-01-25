@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
- int a,b,c,d;
+ int a,b,c,d,e,f;
  float oB;
   
   //initalisieren der Variablen
@@ -9,6 +9,8 @@ int main(){
   b = 0;
   c = 0;
   d = 0;
+  e = 0;
+  f = 0;
   
   //abfragen des offenen Betrags
   printf("\n\nGeben sie den offenen Betrag in Euro ein:");
@@ -25,13 +27,19 @@ int main(){
   } while (oB >= 0.1){
     oB = oB - 0.1;
     c++;
-  } if (oB = 0.050){
+  } while (oB >= 0.050){
     oB = oB - 0.050;
     d++;
+  } while (oB >= 0.020){
+    oB = oB - 0.020;
+    e++;
+  } while (oB >= 0.01){
+    oB = oB - 0.010;
+    f++;
   }
   
   //ausgabe wieviele Münzen gebraucht werden
-  printf("Man braucht %i zwei Euro Stücke, %i fünfzig Cent Stücke, %i zehn Cent Stücke und %i fünf Cent Stück. \n\n\n", a,b,c,d);
+  printf("Man braucht %i zwei Euro Stücke, %i fünfzig Cent Stücke, %i zehn Cent Stücke, %i fünf Cent Stücke, %i zwei Cent Stücke und %i ein Cent Stücke. \n\n\n", a,b,c,d,e,f);
 
   return 0;
 }
