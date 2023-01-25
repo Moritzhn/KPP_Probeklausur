@@ -31,7 +31,7 @@ int main(){
   }
   
   //ausgabe wieviele Münzen gebraucht werden
-  printf("Man braucht %i 2 Euro Stücke, %i 50 Cent Stücke, %i 10 Cent Stücke und %i 5 Cent Stück. \n\n\n", a,b,c,d);
+  printf("Man braucht %i zwei Euro Stücke, %i fünfzig Cent Stücke, %i zehn Cent Stücke und %i fünf Cent Stück. \n\n\n", a,b,c,d);
 
   return 0;
 }
