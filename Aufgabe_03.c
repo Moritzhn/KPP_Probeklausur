@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main(){
- int a,b,c,d,oB;
+ int a,b,c,d;
+ float oB;
   
   //initalisieren der Variablen
   a = 0;
@@ -10,22 +11,22 @@ int main(){
   d = 0;
   
   //abfragen des offenen Betrags
-  printf("\n\n\nGeben sie den offenen Betrag in Cent ein:\n");
-  scanf("%i", &oB);
+  printf("\n\nGeben sie den offenen Betrag in Euro ein:");
+  scanf("%f", &oB);
   printf("\n");
   
   //ausrechnen wieviele Münzen gebraucht werden
-  while (oB >= 200){
-    oB = oB - 200;
+  while (oB >= 2){
+    oB = oB - 2;
     a++;
-  } while (oB >= 50){
-    oB = oB - 50;
+  } while (oB >= 0.5){
+    oB = oB - 0.50;
     b++;
-  } while (oB >= 10){
-    oB = oB - 10;
+  } while (oB >= 0.1){
+    oB = oB - 0.1;
     c++;
-  } while (oB >= 5){
-    oB = oB - 5;
+  } while (oB >= 0.05){
+    oB = oB - 0.05;
     d++;
   }
   
