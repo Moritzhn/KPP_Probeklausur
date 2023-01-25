@@ -11,7 +11,7 @@ int main(){
   
   //abfragen des offenen Betrags
   printf("\n\n\nGeben sie den offenen Betrag in Cent ein:\n");
-  scanf("%i", &oB);
+  scanf("%i \n", &oB);
   
   //ausrechnen wieviele Münzen gebraucht werden
   while (oB >= 200){
