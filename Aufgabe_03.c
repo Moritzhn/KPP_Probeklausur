@@ -16,13 +16,13 @@ int main(){
   printf("\n");
   
   //ausrechnen wieviele Münzen gebraucht werden
-  while (oB >= 2){
+  while (oB => 2){
     oB = oB - 2;
     a++;
-  } while (oB >= 0.5){
+  } while (oB => 0.5){
     oB = oB - 0.50;
     b++;
-  } while (oB >= 0.1){
+  } while (oB => 0.1){
     oB = oB - 0.1;
     c++;
   } if (oB = 0.050){
